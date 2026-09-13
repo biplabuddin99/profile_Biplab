@@ -10,8 +10,11 @@
   <meta content="Biplab Uddin, Laravel Developer, PHP Developer, Full Stack Developer, Web Application Developer, Chattogram Bangladesh" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/sideprofile.JPG" rel="icon">
+  <link href="assets/img/sideprofile.jpg" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Preload hero background so it starts fetching before CSS is parsed -->
+  <link rel="preload" as="image" href="assets/img/biplobbg.jpg">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -39,7 +42,7 @@
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img src="assets/img/sideprofile.JPG" alt="" class="img-fluid rounded-circle">
+        <img src="assets/img/sideprofile.jpg" alt="Biplab Uddin" class="img-fluid rounded-circle" width="100" height="100">
         <h1 class="text-light"><a href="index.html">BIPLAB UDDIN</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="https://twitter.com/biplabuddin99" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -67,9 +70,16 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
-      <h1 class>BIPLAB UDDIN</h1>
+      <span class="hero-tagline">Chattogram, Bangladesh</span>
+      <h1>BIPLAB UDDIN</h1>
       <p>I'm <span class="typed" data-typed-items="Laravel Developer, PHP Developer, Full Stack Developer, Web Application Developer"></span></p>
+      <p class="hero-summary">I build ERP modules, healthcare platforms and e-commerce systems with Laravel, PHP, Vue.js and React &mdash; currently at InTEAM Tech Bd. and Magnetism Tech Limited.</p>
+      <div class="hero-actions">
+        <a href="#portfolio" class="btn btn-primary scrollto">View My Work</a>
+        <a href="#contact" class="btn btn-outline-light scrollto">Get In Touch</a>
+      </div>
     </div>
+    <a href="#about" class="scroll-down scrollto" aria-label="Scroll to About section"><i class="bi bi-chevron-double-down"></i></a>
   </section><!-- End Hero -->
 
   <main id="main">
